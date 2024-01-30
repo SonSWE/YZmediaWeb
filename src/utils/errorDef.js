@@ -1,0 +1,31 @@
+export const ErrorDefCommon = {
+  USER_USERNAME_EXIST: '-10001',
+
+  // --company reg
+  EMAIL_EXIST: '-10002',
+  PHONE_EXIST: '-10003',
+  COMPANY_STATUS_INVALID: '-10004',
+
+  GROUP_EXIST: '-20001',
+
+
+  PROJECT_MEMBER_EXIST: '-20002',
+  PROJECT_MEMBER_NOT_EXIST: '-20003',
+
+  // --đầu 3 dành cho cổ đông
+  HUMAN_NOT_EXIST: '-30001',
+  HUMAN_EXIST: '-30002',
+
+  // --đầu 4 dành cho quyền
+  FUNCTION_EXIST: '-40001',
+  FUNCTION_NOT_EXIST: '-40002',
+  USER_NOT_RIGHT: '-40003',
+  USER_NOT_EXIST: '-40004',
+
+  // --đầu 5 dành cho thực hiện quyền
+  REGISTER_BUY_QTTY_INVALID: '-50001',
+  REGISTER_BUY_DATE_INVALID: '-50002',
+  TRANSFER_QTTY_INVALID: '-50003',
+  TRANSFER_DATE_BUY_INVALID: '-50004',
+  NOT_TRANFER_TO_YOURSELF: '-50005',
+}
