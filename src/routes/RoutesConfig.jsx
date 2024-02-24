@@ -1,7 +1,7 @@
 //view
 import Dashboard from "../pages/Dashboard/Index";
 
-// import ShareType from "../scenes/company/ShareType/Index";
+import PostList from "../pages/PostManager/PostList";
 
 //layout
 import { LayoutOriginal } from "../components/layout/LayoutOriginal";
@@ -14,11 +14,11 @@ export const RoutersConfig = [
     pageLayout: LayoutOriginal,
     pageContent: { component: Dashboard },
   },
-  // {
-  //   Function_Id: "SHARETYPE",
-  //   checkRight: false,
-  //   Function_Url: "/share-type",
-  //   pageLayout: LayoutOriginal,
-  //   pageContent: { component: ShareType },
-  // },
+  {
+    Function_Id: "POSTS",
+    checkRight: false,
+    Function_Url: "/quan-ly-bai-viet",
+    pageLayout: LayoutOriginal,
+    pageContent: { component: PostList },
+  },
 ];

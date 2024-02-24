@@ -53,16 +53,16 @@ const TopControls = () => {
   };
 
   const items = [
+    // {
+    //   label: <a onClick={gotoProfile}>Profile</a>,
+    //   icon: <FontAwesomeIcon icon={faEye} color="#69B1FF" />,
+    //   key: "1",
+    // },
+    // {
+    //   type: "divider",
+    // },
     {
-      label: <a onClick={gotoProfile}>Profile</a>,
-      icon: <FontAwesomeIcon icon={faEye} color="#69B1FF" />,
-      key: "1",
-    },
-    {
-      type: "divider",
-    },
-    {
-      label: "Logout",
+      label: "Đăng xuất",
       icon: <FontAwesomeIcon icon={faArrowRightFromBracket} color="red" />,
       key: "3",
       onClick: Logout,
@@ -75,11 +75,7 @@ const TopControls = () => {
 
       <div className="app__top-controls">
         <div className="notifications">
-          <div className="bell">
-            <FontAwesomeIcon icon={faBell} />
-          </div>
-
-          <div className="quantity">8</div>
+          
         </div>
 
         <Dropdown

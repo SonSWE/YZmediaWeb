@@ -4,8 +4,6 @@ import { useSelector } from "react-redux";
 
 import { Menu } from "antd";
 
-// import logo from "../../assets/resource/image/XMLID_1_.png";
-
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import {
   faHome,
@@ -79,7 +77,7 @@ const SideBar = React.forwardRef(({ onEvent, config, headerConfig }, ref) => {
         return item;
       });
   };
-
+console.log(userInfo?.FunctionSettings)
   const getListItemMenu = () => {
     let _lstItems = [];
     _lstItems = arrayToTree(userInfo?.FunctionSettings, "0");

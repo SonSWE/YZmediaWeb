@@ -28,7 +28,7 @@ const DataTableV2 = React.forwardRef(
       havePaging = true,
       haveExportExel = false,
       getDataExportExel,
-      style = { height: "calc(100vh - 380px)", width: "100%" }
+      style = { height: "calc(100vh - 380px)", width: "100%" },
     },
     ref
   ) => {
@@ -40,10 +40,7 @@ const DataTableV2 = React.forwardRef(
       () => ({ width: "100%", height: "100%", position: "relative" }),
       []
     );
-    const gridStyle = useMemo(
-      () => (style),
-      []
-    );
+    const gridStyle = useMemo(() => style, []);
 
     // Set row data
     const columnDefs = useMemo(() => columns, [columns]);
@@ -145,7 +142,6 @@ const DataTableV2 = React.forwardRef(
             autoSizeStrategy={{
               type: "fitCellContents",
             }}
-            
             paginationPageSize={10}
             rowSelection={"single"}
             multiSortKey={"ctrl"}
