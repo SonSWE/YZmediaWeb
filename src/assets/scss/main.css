@@ -86,9 +86,8 @@ button:focus {
 }
 
 #root {
-  max-width: 1280px;
   margin: 0 auto;
-  padding: 2rem;
+  padding: 0;
   text-align: center;
 }
 
@@ -126,4 +125,20 @@ button:focus {
 
 .read-the-docs {
   color: #888;
+}
+
+.app {
+  height: 100vh;
+}
+.app .app__outlet {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+}
+.app .app__outlet .app__top {
+  width: 280px;
+}
+.app .app__outlet .app__outlet-inner {
+  width: calc(100% - 280px);
+  overflow-y: auto;
 }/*# sourceMappingURL=main.css.map */

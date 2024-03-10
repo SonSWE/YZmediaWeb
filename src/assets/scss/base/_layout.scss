@@ -1,0 +1,17 @@
+.app {
+  height: 100vh;
+  .app__outlet {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+
+    .app__top {
+      width: 280px;
+    }
+
+    .app__outlet-inner {
+      width: calc(100% - 280px);
+      overflow-y: auto;
+    }
+  }
+}

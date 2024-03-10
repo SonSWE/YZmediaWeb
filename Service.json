@@ -1,0 +1,107 @@
+﻿[
+  {
+    "Id": 1,
+    "Name": "hrm service 105",
+    "public_type": "Release",
+    "folder_Project_Window": "E:\\QLNS\\QLNS_BE\\HRMService\\HRMService\\",
+    "FolderProfile_Window": "Properties\\PublishProfiles\\FolderProfile.pubxml",
+    "folder_OutPut_Window": "",
+
+    "csproj": "HRMService.csproj",
+    "FileZip": "HRMService.zip",
+    "Command_ReStart": "systemctl restart hrm.service",
+    "Computer_Ip": "192.168.2.105",
+    "Computer_User": "root",
+    "Computer_Pass": "1h1jlXtmPE/tfWaDgtN8cQ==",
+    "SSH_Port": 22,
+
+    "FolderParent_Linux": "/opt/hrm/",
+    "FolderService_Linux": "/opt/hrm/HRMService",
+    "Is_Public": 1,
+    "NetVersion": "7.0"
+  },
+  {
+    "Id": 2,
+    "Name": "hrm service 88",
+    "public_type": "Release",
+    "folder_Project_Window": "E:\\QLNS\\QLNS_BE\\HRMService\\HRMService\\",
+    "FolderProfile_Window": "Properties\\PublishProfiles\\FolderProfile.pubxml",
+    "folder_OutPut_Window": "",
+
+    "csproj": "HRMService.csproj",
+    "FileZip": "HRMService.zip",
+    "Command_ReStart": "systemctl restart hrm.service",
+    "Computer_Ip": "192.168.2.88",
+    "Computer_User": "root",
+    "Computer_Pass": "1h1jlXtmPE/tfWaDgtN8cQ==",
+    "SSH_Port": 22,
+
+    "FolderParent_Linux": "/opt/hrm/",
+    "FolderService_Linux": "/opt/hrm/HRMService",
+    "Is_Public": 1,
+    "NetVersion": "7.0"
+  },
+  {
+    "Id": 93,
+    "Name": "sso shareholder 105",
+    "public_type": "Release",
+    "folder_Project_Window": "E:\\Shareholder\\SSOService\\SSOService\\",
+    "FolderProfile_Window": "Properties\\PublishProfiles\\FolderProfile.pubxml",
+    "folder_OutPut_Window": "",
+
+    "csproj": "SSOService.csproj",
+    "FileZip": "SSOService.zip",
+    "Command_ReStart": "systemctl restart sso_sh.service",
+    "Computer_Ip": "192.168.2.105",
+    "Computer_User": "root",
+    "Computer_Pass": "1h1jlXtmPE/tfWaDgtN8cQ==",
+    "SSH_Port": 22,
+
+    "FolderParent_Linux": "/opt/shareholder/",
+    "FolderService_Linux": "/opt/shareholder/SSO",
+    "Is_Public": 1,
+    "NetVersion": "7.0"
+  },
+  {
+    "Id": 94,
+    "Name": "shareholder 105",
+    "public_type": "Release",
+    "folder_Project_Window": "E:\\Shareholder\\ShareHolderService\\ShareHolderService\\",
+    "FolderProfile_Window": "Properties\\PublishProfiles\\FolderProfile.pubxml",
+    "folder_OutPut_Window": "",
+
+    "csproj": "ShareHolderService.csproj",
+    "FileZip": "ShareHolderService.zip",
+    "Command_ReStart": "systemctl restart sholder_sh.service",
+    "Computer_Ip": "192.168.2.105",
+    "Computer_User": "root",
+    "Computer_Pass": "1h1jlXtmPE/tfWaDgtN8cQ==",
+    "SSH_Port": 22,
+
+    "FolderParent_Linux": "/opt/shareholder/",
+    "FolderService_Linux": "/opt/shareholder/SHolderService",
+    "Is_Public": 1,
+    "NetVersion": "7.0"
+  },
+  {
+    "Id": 95,
+    "Name": "ckms 105",
+    "public_type": "Release",
+    "folder_Project_Window": "D:\\Working\\ShareHolder\\Program\\CKMSService\\CKMSService\\",
+    "FolderProfile_Window": "Properties\\PublishProfiles\\FolderProfile.pubxml",
+    "folder_OutPut_Window": "",
+
+    "csproj": "CKMSService.csproj",
+    "FileZip": "CKMSService.zip",
+    "Command_ReStart": "systemctl restart ckms_sh.service",
+    "Computer_Ip": "192.168.2.105",
+    "Computer_User": "root",
+    "Computer_Pass": "1h1jlXtmPE/tfWaDgtN8cQ==",
+    "SSH_Port": 22,
+
+    "FolderParent_Linux": "/opt/shareholder/",
+    "FolderService_Linux": "/opt/shareholder/CKMS",
+    "Is_Public": 1,
+    "NetVersion": "7.0"
+  }
+]

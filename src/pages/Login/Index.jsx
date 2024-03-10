@@ -11,7 +11,7 @@ const Index = () => {
   const [form] = Form.useForm();
   const apiClient = useLoginApi();
   const dispatch = useDispatch();
-
+  const navigate = useNavigate();
 
   const onFinish = async (values) => {
     let param = {
@@ -20,7 +20,7 @@ const Index = () => {
       Grant_Type: "password",
       Refresh_Token: "",
     };
-    
+
     apiClient
       .Login(param)
       .then((res) => {

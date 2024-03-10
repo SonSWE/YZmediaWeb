@@ -1,10 +1,10 @@
-import { defineConfig } from 'vite'
-import react from '@vitejs/plugin-react-swc'
+import { defineConfig } from "vite";
+import react from "@vitejs/plugin-react";
 
-// https://vitejs.dev/config/
 export default ({ mode }) => defineConfig({
-  plugins: [react()],
-  define: {
-    "process.env.NODE_ENV": `"${mode}"`,
-}
-})
+    plugins: [react()],
+    define: {
+        "process.env.NODE_ENV": `"${mode}"`,
+    },
+    server: {port: 5173}
+});
