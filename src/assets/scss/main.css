@@ -141,4 +141,87 @@ button:focus {
 .app .app__outlet .app__outlet-inner {
   width: calc(100% - 280px);
   overflow-y: auto;
+}
+
+.main-layout {
+  min-height: 100vh;
+}
+.main-layout .content-scroll {
+  height: 100vh;
+  overflow-y: scroll;
+  padding-bottom: 50px;
+}
+.main-layout .content-scroll .ant-layout-content {
+  min-height: unset;
+}
+.main-layout .main-layout-content {
+  margin: 0 16px;
+}
+.main-layout .main-layout-content .main-layout-breadcrumb {
+  margin: 16px 0px;
+}
+.main-layout .main-layout-content .card-content {
+  padding: 24px;
+  background-color: #fff;
+  border-radius: 10px;
+}
+.main-layout .main-layout-content .flex-content {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 30px;
+}
+
+.scroll {
+  overflow: auto;
+}
+
+.ant-form .field-list {
+  display: flex;
+  flex-direction: column;
+}
+.ant-form .field-list .ant-form-item .ant-form-item-row {
+  justify-content: flex-start;
+  flex-direction: column;
+}
+.ant-form .field-list .ant-form-item .ant-form-item-row .ant-col {
+  min-height: auto;
+}
+.ant-form .field-list .ant-form-item .ant-form-item-row .ant-form-item-label {
+  text-align: left;
+}
+.ant-form .field-list .ant-form-item .ant-form-item-row .ant-form-item-label > label::before {
+  position: absolute;
+  right: 0px;
+}
+.ant-form .field-list .ant-form-item .ant-form-item-row .ant-form-item-label > label::after {
+  content: "";
+  margin: 0 8px 0 10px;
+}
+.ant-form .field-list .ant-form-item .ant-form-item-row .thumbnail-uploader .ant-upload.ant-upload-select-picture-card {
+  height: 200px !important;
+  width: 100%;
+}
+.ant-form .field-list .ant-form-item .ant-select-selection-item {
+  text-align: left;
+}
+
+.ant-form.form-search .flex-controls {
+  display: flex;
+  gap: 20px;
+  flex-wrap: wrap;
+}
+.ant-form.form-search .flex-controls .ant-form-control {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  align-items: flex-start;
+}
+.ant-form.form-search .flex-controls .ant-form-control.ant-form-input {
+  flex: 0 0 20%;
+  min-width: 20%;
+}
+.ant-form.form-search .flex-controls .ant-form-control .ant-form-item {
+  width: 100%;
+  margin: 0;
 }/*# sourceMappingURL=main.css.map */

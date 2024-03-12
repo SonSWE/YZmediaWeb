@@ -1,0 +1,40 @@
+.ant {
+  &-form {
+    .field-list {
+      display: flex;
+      flex-direction: column;
+
+      .ant-form-item {
+        .ant-form-item-row {
+          justify-content: flex-start;
+          // display: flex;
+          flex-direction: column;
+          .ant-col {
+            min-height: auto;
+          }
+          .ant-form-item-label {
+            text-align: left;
+            & > label::before {
+              position: absolute;
+              right: 0px;
+            }
+            & > label::after {
+              content: "";
+              margin: 0 8px 0 10px;
+            }
+          }
+          .thumbnail-uploader {
+            .ant-upload.ant-upload-select-picture-card {
+                height: 200px !important;
+                width: 100%;
+              }
+          }
+        }
+
+        .ant-select-selection-item {
+          text-align: left;
+        }
+      }
+    }
+  }
+}

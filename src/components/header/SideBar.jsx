@@ -92,11 +92,11 @@ const SideBar = React.forwardRef(({ onEvent, config, headerConfig }, ref) => {
         label: "Quản lý bài viết",
         key: "POSTMANA",
         className:
-          location.pathname === "/quan-ly-bai-viet"
+          location.pathname === "/danh-sach-bai-viet"
             ? "ant-menu-item-selected"
             : "",
         onClick: () => {
-          navigate("/quan-ly-bai-viet");
+          navigate("/danh-sach-bai-viet");
         },
       },
     ];

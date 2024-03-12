@@ -1,0 +1,29 @@
+.ant {
+  &-form {
+    &.form-search {
+      .flex-controls {
+        display: flex;
+        gap: 20px;
+        flex-wrap: wrap;
+
+        .ant-form-control {
+          &.ant-form-input {
+            flex: 0 0 20%;
+            min-width: 20%;
+          }
+          
+
+          display: flex;
+          flex-direction: column;
+          justify-content: flex-end;
+          align-items: flex-start;
+
+          .ant-form-item {
+            width: 100%;
+            margin: 0;
+          }
+        }
+      }
+    }
+  }
+}

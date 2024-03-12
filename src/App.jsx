@@ -18,8 +18,8 @@ function App() {
   const dispatch = useDispatch();
 
   const userLogin = useSelector((state) => state.authReducer);
-  const isLogin = userLogin && userLogin.User_Id;
-
+  // const isLogin = userLogin && userLogin.User_Id;
+  const isLogin = true;
   const _handleVisibilityChange = (e) => {
     if (isLogin && document.visibilityState !== "hidden") {
       loginApi
@@ -50,22 +50,35 @@ function App() {
 
     window.addEventListener("message", _handlePostMessage, false);
 
+    GetAllCode()
+        .then((data) => {
+          if (data && data.jsondata) {
+            dispatch({
+              type: "SET_ALLCODE",
+              payload: JSON.parse(data.jsondata),
+            });
+          }
+        })
+        .catch(function (err) {
+          console.log(err);
+        });
     //
     if (userLogin && userLogin.User_Name != undefined) {
       _handleVisibilityChange();
       //gọi api lấy allcode
-      // GetAllCode()
-      //   .then((data) => {
-      //     if (data && data.jsondata) {
-      //       dispatch({
-      //         type: "SET_ALLCODE",
-      //         payload: JSON.parse(data.jsondata),
-      //       });
-      //     }
-      //   })
-      //   .catch(function (err) {
-      //     console.log(err);
-      //   });
+      GetAllCode()
+        .then((data) => {
+          if (data && data.jsondata) {
+            console.log(data)
+            dispatch({
+              type: "SET_ALLCODE",
+              payload: JSON.parse(data.jsondata),
+            });
+          }
+        })
+        .catch(function (err) {
+          console.log(err);
+        });
     }
 
     return () => {
